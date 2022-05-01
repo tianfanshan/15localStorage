@@ -30,6 +30,8 @@ addBtn.addEventListener('click', function(ev){
 
 searchForBtn.addEventListener('click', function(){
 
+    infomation.innerHTML = '';
+
     let pullUserData = JSON.parse(localStorage.getItem(searchForInput.value));
 
     infomation.innerHTML = pullUserData.name + pullUserData.email + pullUserData.message;
